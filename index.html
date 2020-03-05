@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title></title>
+</head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<style type="text/css">
+	
+	*{margin: 0;
+	padding: 0;}
+	
+	.grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+	}
+	
+	.logo{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'Pacifico', cursive;
+		font-size: 50px;
+		padding-left: 0px;
+		text-align: center;
+		color: black;
+		margin: auto;
+
+	}
+	
+	.nav{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 30px;
+		
+	}
+	
+	.nav a{
+		text-decoration: none;
+		color: black;
+    }
+	
+	.nav a:link {
+		  color: black;
+		}
+		
+	.nav a:visited {
+		  color: dimgray;
+		}
+
+	.nav a:hover {
+		  color: #1D6E2F;
+		transition: all 0.4s;
+		}
+	
+	
+	.image1{
+		grid-column: 1;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	
+	.image2{
+		grid-column: 1;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.headline{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans-serif;
+		text-align: center;
+		font-size: 23px;
+	}
+	
+	.headline2{
+		grid-column: 1;
+		background-color: white;
+		font-family: serif;
+		text-align: center;
+		font-size: 19px;
+
+	
+	}
+	
+			
+	.title{
+			grid-column: 1;
+			padding-left: 30px;
+			padding-bottom: 40px;
+			padding-top: 40px;
+			background-color: #1D6E2F;
+			opacity: .45;
+			text-align: center;
+			color: white;
+			font-family: pacifico, sans serif;
+			font-size: 40px;
+		}
+	
+	
+	
+	.text{
+		grid-column: 1;
+		background-color: slategray;
+		font-family: Roboto, sans-serif;
+		background-color: #1D6E2F;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 10px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 15px;
+		font-family: 'Roboto';
+		color: white;
+		font-size: 17px;
+		opacity: .45;
+	
+	}
+	
+	.text2{
+		grid-column: 1;
+		font-family: Roboto, sans-serif;
+		background-color: #1D6E2F;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 10px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 15px;
+		font-family: 'Roboto';
+		color: white;
+		font-size: 17px;
+		opacity: .45;
+	}
+	
+	.text2 a{
+			text-decoration: none;
+			color: white;
+		
+		}
+	
+	.text2 a:hover {
+		  color: lightcoral;
+		}
+	
+	.video {
+		align-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.text3{
+		grid-column: 1;
+		font-family: Roboto, sans-serif;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans serif;
+		color: black;
+		font-size: 17px;
+		padding-top: 30px;
+		padding-left: 50px;
+		padding-right: 20px;
+		padding-bottom: 15px;
+		font-size: 20px;
+		
+	}
+		
+	
+	.footer{
+		grid-column: 1;
+		background-color: #1D6E2F;
+		opacity: 0.45;
+		font-family: arial, sans serif;
+		font-size: 14px;
+		padding-bottom: 10px;
+		padding-left: 5px;
+		padding-top: 10px;
+		float: right;
+		text-align: right;
+		padding-right: 15px;
+		color: white;
+	
+	}
+	
+	.footer a{
+		text-decoration: none;
+		color: white;
+	}
+	
+		.footer a:hover{
+		color: lightcoral;
+	}
+	
+	
+	
+	/*DESIGN FOR DESKTOP*/
+	
+	
+	@media screen and (min-width: 1024px)
+	
+	{.grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+	}
+	
+	.logo{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		float: left;
+		padding-top: 30px;
+		padding-left: 30px;
+		
+	}
+		
+
+	
+	.nav{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		background-color: white;
+		font-size: 20px;
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-size: 20px;
+		text-align: right;
+		padding-right: 30px;
+		padding-bottom: 30px;
+
+	
+		
+	}
+		
+		
+		.nav a:link {
+		  color: black;
+		}
+		
+		
+
+		.nav a:visited {
+		  color: dimgray;
+		}
+
+		.nav a:hover {
+		  color: #1D6E2F;
+		transition: all 0.4s;
+		}
+	
+		
+		
+	.image1{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		padding-top: 40px;
+		
+	}
+		
+
+	.image2{
+		grid-column-start: 2;
+		grid-column-end: 2;
+		padding-top: 40px;
+
+		
+	}
+	
+	.headline{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans-serif;
+		text-align: center;
+		font-size: 23px;
+	}
+		
+	.headline2{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		background-color: white;
+		text-align: center;
+		font-size: 19px;
+		padding-bottom: 15px;
+		font-family: serif;
+	}
+		
+		.title{
+			grid-column-start: 1;
+			grid-column-end: 3;
+			padding-left: 30px;
+			padding-bottom: 40px;
+			padding-top: 40px;
+			background-color: #1D6E2F;
+			opacity: .45;
+			text-align: center;
+			color: white;
+			font-family: pacifico, sans serif;
+			font-size: 40px;
+		}
+	
+		
+	.text{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		background-color: #1D6E2F;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 15px;
+		font-family: 'Roboto';
+		color: white;
+		font-size: 17px;
+		opacity: .45;
+
+	
+		
+	}
+		
+	.text2{
+		grid-column-start: 2;
+		grid-column-end: 3;
+		background-color: #1D6E2F;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 10px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 15px;
+		font-family: 'Roboto';
+		color: white;
+		font-size: 17px;
+		opacity: .45;
+	
+		
+	}
+		
+		.text2 a{
+			text-decoration: none;
+			color: white;
+		
+		}
+		
+		.text2 a:hover {
+		  color: lightcoral;
+		}
+		
+			.video {
+		align-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.text3{
+		grid-column-start: 2;
+		grid-column-end: 3;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans serif;
+		color: black;
+		font-size: 17px;
+		padding-top: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 15px;
+		font-size: 30px;
+	}
+		
+		
+
+	.footer{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		background-color: #1D6E2F;
+		opacity: 0.4;
+		font-family: arial, sans serif;
+		font-size: 14px;
+		padding-bottom: 10px;
+		padding-left: 5px;
+		padding-top: 10px;
+		float: right;
+		text-align: right;
+		padding-right: 15px;
+		color: white;
+	}
+	
+		.footer a{
+		text-decoration: none;
+		color: white;
+	}
+	
+	
+
+	
+</style>
+	
+	
+	
+	
+<body>
+	
+
+	
+	
+<div class="grid">
+
+	
+
+<a href="index.html"> 
+   
+	<div class="logo"> <img src="images/squarelogo.png" alt="Plastic-Surprise" class="center" height="230px"> </div>
+		
+	  </a>
+	
+	<div class="headline">Taking one step at a time to love the planet.</div>
+	
+	<div class="headline2"><i>Zero waste. Sustainability. Plastic-Free.</i></div>
+
+	
+
+	<div class="nav">
+		<a href="index.html">HOME</a> &#9652;
+		<a href="about.html">ABOUT US</a> &#9652;
+		<a href="articles.html">ARTICLES</a> &#9652;
+		<a href="contact.html">CONTACT</a>
+
+	
+	</div>	
+	
+	<div class="title"> Plastic Pollution </div>
+
+		
+	
+	<div class="image1"> <a href="articles.html"><img src="images/PlasticSurprise.jpg" alt="Plastic-Surprise" class="center" height="550px"></a>
+	
+	</div>
+	
+
+	
+
+	
+
+	
+	<div class="image2"> <a href="articles.html"><img src="images/PlasticSurprise2.jpg" alt="Plastic-Surprise" class="center" height="550px"></a>
+	
+	</div>
+	
+	 <div class="text">For more than a century, the ocean has been under seige.
+Our ocean faces growing challenges from pollution, offshore development and climate change. At the same time, expanding industries, such as offshore oil drilling, threaten to crowd our ocean and degrade its health. </div>
+
+
+		 <div class="text2"> Every day poses new threats to our oceans and beaches. Our ocean and special places must be proactively protected before they are threatened and stem the tide before further damage is done to the ocean’s health. Image Source: <a href="https://www.surfrider.org/campaigns">Surf Rider</a></div>
+	
+	
+
+<div class="video"> <iframe width="500" height="300" src="https://www.youtube.com/embed/MNFUwVcpZAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	
+	<div class="text3"> <p><b>WHAT YOU CAN DO:</b></p> 
+		&nbsp;
+		<p>&bull; Educate yourself on current environmental issues, such as plastic pollution.</p>
+		<p>&bull; Incorporate sustainable, plastic-free alternatives in your life.</p>
+		<p>&bull; Share this page + tell others about it!</p>
+					 </div>
+	
+
+
+
+	<div class="footer">
+		<span>&copy; Love The Planet&trade; | <a href="http://bysoheecho.com">www.bysoheecho.com</a></span>
+
+	</div>
+	
+
+	</div>
+	
+	</body>
+</html>

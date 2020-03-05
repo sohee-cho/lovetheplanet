@@ -1,0 +1,477 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+	
+	
+<style>
+	
+	*{margin: 0;
+	padding: 0;}
+	
+	body {font-family: 'Roboto', Helvetica, sans-serif;}
+	
+	.grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+	}
+	
+	.logo{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'Pacifico', cursive;
+		font-size: 50px;
+		padding-left: 0px;
+		text-align: center;
+		color: black;
+		margin: auto;
+
+	}
+	
+	.nav{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 30px;
+		
+	}
+	
+	.nav a{
+		text-decoration: none;
+		color: black;
+    }
+	
+	.nav a:link {
+		  color: black;
+		}
+		
+	.nav a:visited {
+		  color: dimgray;
+		}
+
+	.nav a:hover {
+		  color: #1D6E2F;
+		transition: all 0.4s;
+		}
+
+	
+	.headline{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans-serif;
+		text-align: center;
+		font-size: 23px;
+	}
+	
+	.headline2{
+		grid-column: 1;
+		background-color: white;
+		font-family: serif;
+		text-align: center;
+		font-size: 19px;
+
+	
+	}
+	
+			
+	.title{
+			grid-column: 1;
+			padding-left: 30px;
+			padding-bottom: 40px;
+			padding-top: 40px;
+			background-color: #1D6E2F;
+			opacity: .45;
+			text-align: center;
+			color: white;
+			font-family: pacifico, sans serif;
+			font-size: 40px;
+		}
+	
+	
+	
+	
+	.footer{
+		grid-column: 1;
+		background-color: #1D6E2F;
+		opacity: 0.45;
+		font-family: arial, sans serif;
+		font-size: 14px;
+		padding-bottom: 10px;
+		padding-left: 5px;
+		padding-top: 10px;
+		float: right;
+		text-align: right;
+		padding-right: 15px;
+		color: white;
+	
+	}
+	
+	.footer a{
+		text-decoration: none;
+		color: white;
+	}
+	
+		.footer a:hover{
+		color: lightcoral;
+	}
+	
+	* {
+			  box-sizing: border-box;
+			}
+
+			input[type=text], select, textarea {
+			  width: 100%;
+			  padding: 12px;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  resize: vertical;
+			}
+
+			label {
+			  padding: 12px 12px 12px 0;
+			  display: inline-block;
+			}
+
+
+			input[type=submit] {
+			  background-color: lightcoral;
+			  color: white;
+			  padding: 12px 20px;
+			  border: none;
+			  border-radius: 4px;
+			  cursor: pointer;
+			  float: right;
+			}
+
+			input[type=submit]:hover {
+			  background-color: #45a049;
+			}
+
+			.container {
+			  border-radius: 5px;
+			  background-color: #f2f2f2;
+			  padding: 20px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			.col-25 {
+			  float: left;
+			  width: 25%;
+			  margin-top: 6px;
+			
+			}
+
+			.col-75 {
+			  float: left;
+			  width: 75%;
+			  margin-top: 6px;
+			}
+	
+	
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+			@media screen and (max-width: 1024px) {
+			  .col-25, .col-75, input[type=submit] {
+				width: 100%;
+				margin-top: 0;
+			  }
+			}
+	
+	
+	/*DESIGN FOR DESKTOP*/
+	
+	
+	@media screen and (min-width: 1024px)
+	
+	{.grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+	
+	.logo{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		float: left;
+		padding-top: 30px;
+		padding-left: 30px;
+		
+	}
+		
+
+	
+	.nav{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		background-color: white;
+		font-size: 20px;
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-size: 20px;
+		text-align: right;
+		padding-right: 30px;
+		padding-bottom: 30px;
+
+	
+		
+	}
+		
+		
+		.nav a:link {
+		  color: black;
+		}
+		
+		
+
+		.nav a:visited {
+		  color: dimgray;
+		}
+
+		.nav a:hover {
+		  color: #1D6E2F;
+		transition: all 0.4s;
+		}
+	
+		
+	
+	.headline{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans-serif;
+		text-align: center;
+		font-size: 23px;
+	}
+		
+	.headline2{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		background-color: white;
+		text-align: center;
+		font-size: 19px;
+		padding-bottom: 15px;
+		font-family: serif;
+	}
+		
+		.title{
+			grid-column-start: 1;
+			grid-column-end: 3;
+			padding-left: 30px;
+			padding-bottom: 40px;
+			padding-top: 40px;
+			background-color: #1D6E2F;
+			opacity: .45;
+			text-align: center;
+			color: white;
+			font-family: pacifico, sans serif;
+			font-size: 40px;
+		}
+	
+		
+		
+
+	.footer{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		background-color: #1D6E2F;
+		opacity: 0.4;
+		font-family: arial, sans serif;
+		font-size: 14px;
+		padding-bottom: 10px;
+		padding-left: 5px;
+		padding-top: 10px;
+		float: right;
+		text-align: right;
+		padding-right: 15px;
+		color: white;
+	}
+	
+		.footer a{
+		text-decoration: none;
+		color: white;
+	}
+	
+					* {
+			  box-sizing: border-box;
+			}
+
+			input[type=text], select, textarea {
+			  width: 100%;
+			  padding: 12px;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  resize: vertical;
+			}
+
+			label {
+			  padding: 12px 12px 12px 0;
+			  display: inline-block;
+			}
+
+			input[type=submit] {
+			  background-color: lightcoral;
+			  color: white;
+			  padding: 12px 20px;
+			  border: none;
+			  border-radius: 4px;
+			  cursor: pointer;
+			  float: right;
+			}
+
+			input[type=submit]:hover {
+			  background-color: #45a049;
+			}
+
+			.container {
+			  border-radius: 5px;
+			  background-color: #f2f2f2;
+			  padding: 20px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.col-25 {
+			  float: left;
+			  width: 25%;
+			  margin-top: 6px;
+			}
+
+			.col-75 {
+			  float: left;
+			  width: 75%;
+			  margin-top: 6px;
+			}
+
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			
+			@media screen and (max-width: 1024px) {
+			  .col-25, .col-75, input[type=submit] {
+				width: 100%;
+				margin-top: 0;
+			  }
+			}
+
+	
+	
+	
+
+	
+	
+</style>
+	
+	
+</head>
+
+	
+	
+<body>
+	
+<div class="grid">
+
+	
+
+<a href="index.html"> 
+   
+	<div class="logo"> <img src="images/squarelogo.png" alt="Plastic-Surprise" class="center" height="230px"> </div>
+		
+	  </a>
+	
+	<div class="headline">Taking one step at a time to love the planet.</div>
+	
+	<div class="headline2"><i>Zero waste. Sustainability. Plastic-Free.</i></div>
+
+	
+
+	<div class="nav">
+		<a href="index.html">HOME</a> &#9652;
+		<a href="about.html">ABOUT US</a> &#9652;
+		<a href="articles.html">ARTICLES</a> &#9652;
+		<a href="contact.html">CONTACT</a>
+
+	
+	</div>	
+	
+	<div class="title"> Contact Us </div>
+	
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+			<option value="usa">South Korea</option>
+			<option value="usa">Italy</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+	<div class="footer">
+		<span>&copy; Love The Planet&trade; | <a href="http://bysoheecho.com">www.bysoheecho.com</a></span>
+
+	</div>
+	</div>
+</body>
+</html>

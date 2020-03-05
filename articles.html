@@ -1,0 +1,657 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title></title>
+</head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<style type="text/css">
+	
+	*{margin: 0;
+	padding: 0;}
+	
+	.grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 15px; }
+	
+
+
+	.logo{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'Pacifico', cursive;
+		font-size: 50px;
+		padding-left: 0px;
+		text-align: center;
+		color: black;
+		margin: auto;
+
+	}
+
+	
+	.nav{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 30px;
+		
+		
+	}
+	
+	.nav a{
+		text-decoration: none;
+		color: black;
+    }
+	
+	.nav a:link {
+		  color: black;
+		}
+		
+	.nav a:visited {
+		  color: dimgray;
+		}
+
+	.nav a:hover {
+		  color: #1D6E2F;
+		transition: all 0.4s;
+		}
+
+	
+	.headline{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans-serif;
+		text-align: center;
+		font-size: 23px;
+	}
+	
+	.headline2{
+		grid-column-start: 1;
+		background-color: white;
+		text-align: center;
+		font-size: 19px;
+	
+	}
+	
+	.title{
+			grid-column: 1;
+			padding-left: 30px;
+			padding-bottom: 40px;
+			padding-top: 40px;
+			background-color: #1D6E2F;
+			opacity: .45;
+			text-align: center;
+			color: white;
+			font-family: pacifico, sans serif;
+			font-size: 40px;
+		}
+	
+			.article1{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		font-size: 13px;
+		padding-left: 30px;
+		padding-top: 30px;
+		padding-right: 30px;
+				
+		
+		}
+		
+		.article1 a:hover {
+		color: lightcoral;
+		transition: all 0.4s;
+		text-decoration: underline;
+		opacity: 0.5;
+			
+		}
+		
+		.article1 a{
+			text-decoration: none;
+			color: #1D6E2F;
+
+		}
+	
+		
+	
+		.article2{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		font-size: 13px;
+		padding-left: 30px;
+		padding-top: 30px;
+		padding-right: 30px;
+			
+		}
+		
+		.article2 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		text-decoration: underline;
+		opacity: 0.5;
+		}
+		
+		.article2 a{
+			text-decoration: none;
+			color: #1D6E2F;
+		
+		}
+	
+		
+		.article3{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		font-size: 13px;
+		padding-left: 30px;
+		padding-top: 30px;
+		padding-right: 30px;
+			
+		}
+		
+		.article3 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		text-decoration: underline;
+		opacity: 0.5;
+		}
+		
+		.article3 a{
+			text-decoration: none;
+			color: #1D6E2F;
+		
+		}
+	
+	
+			.article4{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		font-size: 13px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 30px;
+			
+		}
+		
+		.article4 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		text-decoration: underline;
+		opacity: 0.5;
+		}
+		
+		.article4 a{
+			text-decoration: none;
+			color: #1D6E2F;
+		 
+		}
+	
+		
+		.article5{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		font-size: 13px;
+		padding-left: 30px;
+		padding-top: 30px;
+		padding-right: 30px;
+			
+		}
+		
+		.article5 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		text-decoration: underline;
+		opacity: 0.5;
+		}
+		
+		.article5 a{
+			text-decoration: none;
+			color: #1D6E2F;
+			
+		}
+	
+		
+		.article6{
+		grid-column: 1;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		font-size: 13px;
+		padding-left: 30px;
+		padding-top: 30px;
+		padding-right: 30px;
+			
+		}
+		
+		.article6 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		text-decoration: underline;
+		opacity: 0.5;
+		}
+		
+		.article6 a{
+			text-decoration: none;
+			color: #1D6E2F;
+		
+		}
+	
+	.specialtext {
+		padding-top: 5px;
+		font-family: 'roboto', sans serif;
+		font-size: 14px;
+		}
+		
+	
+	
+	
+	.footer{
+		grid-column: 1;
+		background-color: #1D6E2F;
+		opacity: 0.45;
+		font-family: arial, sans serif;
+		font-size: 14px;
+		padding-bottom: 10px;
+		padding-left: 5px;
+		padding-top: 10px;
+		float: right;
+		text-align: right;
+		padding-right: 15px;
+		color: white;
+	
+	}
+	
+		.footer a{
+		text-decoration: none;
+		color: white;
+	}
+	.footer a:hover{
+		color: lightcoral;
+	}
+	
+	
+	
+	
+	
+	@media screen and (min-width: 1024px)
+	
+	{.grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 15px;
+	}
+	
+	.logo{
+		grid-column-start: 1;
+		grid-column-end: 4;
+		padding-left: 30px;
+		padding-top:30px;
+		float: left;
+		
+	}
+		
+
+	
+	.nav{
+	grid-column-start: 1;
+		grid-column-end: 4;
+		background-color: white;
+		font-size: 20px;
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-size: 20px;
+		text-align: right;
+		padding-right: 30px;
+		padding-bottom: 30px;
+		
+	}
+		
+		.nav a:link {
+		  color: black;
+		}
+		
+		
+
+		.nav a:visited {
+		  color: dimgray;
+		}
+
+		.nav a:hover {
+		  color: #1D6E2F;
+		transition: all 0.4s;
+		}
+	
+	
+	
+	
+	.headline{
+		grid-column-start: 1;
+		grid-column-end: 4;
+		background-color: white;
+		font-family: 'PT Sans Narrow', sans-serif;
+		text-align: center;
+		font-size: 23px;
+	}
+	
+	.headline2{
+		grid-column-start: 1;
+		grid-column-end: 4;
+		background-color: white;
+		text-align: center;
+		font-size: 19px;
+		padding-bottom: 15px;
+	
+	}
+		
+		.title{
+			grid-column-start: 1;
+			grid-column-end: 4;
+			padding-left: 30px;
+			padding-bottom: 40px;
+			padding-top: 40px;
+			background-color: #1D6E2F;
+			opacity: .45;
+			text-align: center;
+			color: white;
+			font-family: pacifico, sans serif;
+			font-size: 40px;
+		}
+	
+		.article1{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: left;
+		font-size: 13px;
+		padding-left: 30px;
+		padding-top: 30px;
+
+		}
+		
+		.article1 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		}
+		
+		.article1 a{
+			text-decoration: none;
+			color: #1D6E2F;
+			opacity: 
+		}
+	
+		
+	
+		.article2{
+		grid-column-start: 2;
+		grid-column-end: 3;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: left;
+		font-size: 13px;
+		padding-left: 30px;
+			padding-top: 30px;
+			
+		}
+		
+		.article2 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		}
+		
+		.article2 a{
+			text-decoration: none;
+			color: #1D6E2F;
+			opacity: 
+		}
+	
+		
+		.article3{
+		grid-column-start: 3;
+		grid-column-end: 4;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: left;
+		font-size: 13px;
+		padding-left: 30px;
+			padding-top: 30px;
+			
+		}
+		
+		.article3 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		}
+		
+		.article3 a{
+			text-decoration: none;
+			color: #1D6E2F;
+			opacity: 
+		}
+	
+	
+			.article4{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: left;
+		font-size: 13px;
+		padding-left: 30px;
+			padding-top: 30px;
+			
+		}
+		
+		.article4 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		}
+		
+		.article4 a{
+			text-decoration: none;
+			color: #1D6E2F;
+			opacity: 
+		}
+	
+		
+			.article5{
+		grid-column-start: 2;
+		grid-column-end: 3;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: left;
+		font-size: 13px;
+		padding-left: 30px;
+			padding-top: 30px;
+			
+		}
+		
+		.article5 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		}
+		
+		.article5 a{
+			text-decoration: none;
+			color: #1D6E2F;
+			opacity: 
+		}
+	
+		
+			.article6{
+		grid-column-start: 3;
+		grid-column-end: 4;
+		background-color: white;
+		font-family: 'Roboto', sans-serif;
+		text-align: left;
+		font-size: 13px;
+		padding-left: 30px;
+			padding-top: 30px;
+			
+		}
+		
+		.article6 a:hover {
+		  color: lightcoral;
+		transition: all 0.4s;
+		}
+		
+		.article6 a{
+			text-decoration: none;
+			color: #1D6E2F;
+	
+		}
+	
+	
+	
+	
+		
+
+	.footer{
+		grid-column-start: 1;
+		grid-column-end: 4;
+		background-color: #1D6E2F;
+		opacity: 0.4;
+		font-family: arial, sans serif;
+		font-size: 14px;
+		padding-bottom: 10px;
+		padding-left: 5px;
+		padding-top: 10px;
+		float: right;
+		text-align: right;
+		padding-right: 15px;
+		color: white;
+		
+	}
+	
+		.specialtext {
+		padding-top: 5px;
+		font-family: 'roboto', sans serif;
+		font-size: 14px;
+		}
+		
+	
+
+	
+</style>
+	
+	
+	
+	
+<body>
+	
+
+	
+	
+<div class="grid">
+
+	
+
+<a href="index.html"> 
+   
+	<div class="logo">  <img src="images/squarelogo.png" alt="Plastic-Surprise" class="center" height="230px"> </div>
+		
+	  </a>
+	
+	<div class="headline">Taking one step at a time to love the planet.</div>
+	
+	<div class="headline2"><i>Zero waste. Sustainability. Plastic-free.</i></div>
+
+	
+
+	<div class="nav">
+		<a href="index.html">HOME</a> &#9652;
+		<a href="about.html">ABOUT US</a> &#9652;
+		<a href="articles.html">ARTICLES</a> &#9652;
+		<a href="contact.html">CONTACT</a>
+
+	
+	</div>	
+	
+	<div class="title"> Articles + Resources </div>
+
+		
+
+	  <div class="article1"> <a href="https://www.plasticpollutioncoalition.org/pft/2019/5/10/breaking-un-decides-to-control-global-plastic-waste-dumping">
+		  <img src="articlepics/1.png" alt="1" height="400">
+		  <h2>UN Decides to Control Global Plastic Waste Dumping</h2></a>
+	<p class="specialtext">Major Plastic Waste Producers Must Get Consent Before Exporting their Toxic Trash to Global South"</p>
+		</div>
+
+	
+
+	
+	  <div class="article2"> <a href="https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables">
+		  <img src="articlepics/2.jpg" alt="1" height="400">
+		  <h2>How Do I Recycle?</h2></a>
+	<p class="specialtext">Deciding to recycle items is just the first step, you also want to make sure the items are recycled correctly. Below you will find common recyclables and the best options to recycle them.</p>
+		</div>
+	
+	
+	
+
+	
+	  <div class="article3"> <a href="https://www.epa.gov/watersense/how-we-use-water">
+		  <img src="articlepics/3.jpg" alt="1" height="400">
+		  <h2>How We Should Use Water</h2></a>
+	<p class="specialtext">Although it's true that the water cycle continuously returns water to Earth, it is not always returned to the same place, or in the same quantity and quality.
+</p>
+	
+	</div>
+	
+	  <div class="article4"> <a href="https://www.thezerowastecollective.com/blog/diy-zero-waste-cleaning-just-got-easier">
+		  <img src="articlepics/4.jpg" alt="1" height="400">
+		  <h2>DIY Zero Waste Cleaning Just Got Easier!</h2></a>
+	<p class="specialtext">Although it's true that the water cycle continuously returns water to Earth, it is not always returned to the same place, or in the same quantity and quality.
+</p>
+	
+	</div>
+	
+	  <div class="article5"> <a href="https://thedesignfiles.net/2011/06/beautiful-bio-table-ware">
+		  <img src="articlepics/5.jpg" alt="1" height="400">
+		  <h2>Beautiful Bio Tableware: Alternatives for Plastic</h2></a>
+	<p class="specialtext">The stunning examples of bio-degradable tableware in this post prove that the most ETHICAL option can also be the most BEAUTIFUL! Ethical = beautiful.
+</p>
+	
+	</div>
+	
+	  <div class="article6"> <a href="https://abeautifulmess.com/2018/03/unpaper-towel-diy-they-are-reuseable.html">
+		  <img src="articlepics/6.jpg" alt="1" height="400">
+		  <h2>Unpaper Towel DIY: Reusable Paper Towels!</h2></a>
+	<p class="specialtext">Paper towels contribute to so much waste. Reusable paper towels are basically mini cloth towels that attach together so you can still have them in a roll on your counter and keep them accessible.</p>
+	
+	</div>
+
+	
+
+
+	<div class="footer">
+		<span>&copy; Love The Planet 2019&trade; | <a href="http://bysoheecho.com">www.bysoheecho.com</a></span>
+		
+
+	</div>
+	
+
+	</div>
+	
+	</body>
+</html>
